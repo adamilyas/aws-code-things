@@ -1,7 +1,8 @@
 # Loading Data to Dynamo DB using Lambda Function
 
 Format of `s3_object`
-"""
+
+```
 {
 	'ResponseMetadata': {
 		'RequestId': 'requestId', 
@@ -28,10 +29,10 @@ Format of `s3_object`
 	'Metadata': {}, 
 	'Body': <botocore.response.StreamingBody object at 0x7f0210db0a20>
 }
-"""
+```
 
 Format of `s3_object['Body'].read()`
-"""
+```
 {
 	'Records': 
 		[
@@ -63,4 +64,4 @@ Format of `s3_object['Body'].read()`
 		}
 	]
 }
-"""
+```
