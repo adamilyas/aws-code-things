@@ -47,7 +47,7 @@ if __name__ == "__main__":
 
     # SETTING UP SNS AND SQS
 
-    resp = sns_client.create_topic(Name=TOPIC_NAME)
+    resp = sns_client.create_topic(Name=SNS_TOPIC_NAME)
     sns_topic_arn = resp['TopicArn']
     print(sns_topic_arn)
     
